@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+    
+    <div class="container">
+
+        <br>
+        <br>
+
+        <!-- Projects Row -->
+        <div class="row">
+            {% if posts %}
+            {% for post in posts %}
+            <div class="col-md-4 portfolio-item" >
+                {% if post.photo %}
+                <a href="/media/{{post.photo}}">
+                    <img class="img-responsive" src= "/media/{{post.photo}}"  alt="">
+                </a>
+                {% endif %}
+                <h3>
+                    <a href="{{post.get_absolute_url}}">{{post.title|upper}}</a>
+                </h3>
+                <p>{{post.body|safe|truncatewords:50}}</p>
+            </div>
+            
+            {% endfor%}
+            {% else %}
+            <p> there are no post </p>
+            {% endif%}
+        </div>
+        <!-- /.row -->
+
+        <hr style = "margin-top:70px;">
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+            <div class="pagination">
+    <span class="step-links">
+        {% if page.has_previous %}
+            <a href="?page={{ page.previous_page_number }}">Previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page.number }} of {{ page.paginator.num_pages }}.
+        </span>
+
+        {% if page.has_next %}
+            <a href="?page={{ page.next_page_number }}">Next</a>
+        {% endif %}
+    </span>
+</div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        
+{% endblock %}

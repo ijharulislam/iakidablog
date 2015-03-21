@@ -1,0 +1,190 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>iAqidah.com</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href= "{% static "/static/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href= "{% static "/static/css/grayscale.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href= "{% static "/static/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">iAqidah </span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Courses</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">iAqidah</h1>
+                        <p class="intro-text">O you who believe! Believe in Allah, and His Messenger (Muhammad SAW)  and the Book (the Qur'an) which He has sent down to His Messenger,and the Scripture which He sent down to those before him
+                        <br> Al-Quran 
+                        </p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About iAqidah </h2>
+                <p>iAqidah is one of the leading Islamic reaserch team, who talks about islamic aqidah and basic belives</p>
+                <p>We arrange prominent islamic seminers. We publish <a href = "#">islamic books </a> on various topics. We arrange online and offline aqidah courses.</p>
+                <p>Our main goal is to preach true islamic Aqidah and guide laymens to right path</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Watch our videos </h2>
+                    <p>Watch our courses and stand as a firm believer </p>
+                    <a href="https://www.youtube.com/user/ideatv2014" class="btn btn-default btn-lg">Visit Youtube Page</a>
+                    <a href="#" class="btn btn-default btn-lg">Visit Vimeo Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Feel free to email us to know about islam and islamic core believes, give us suggestions for new courses and seminars, or to just say hello!</p>
+                <p><a href="#">ijharalkawsary@gamil.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/hm.ijhar" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id = "blog" class="container content-section text-center">
+
+
+   <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Blog</h2>
+                <p>Visit our <a href = "/blog"> blog.</a> We always try to update it. We hope it will be informative for you.</p>
+                <a href="/blog" class="btn btn-default btn-lg">iAqidah Blog</a>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Map Section -->
+    <div id = "map">
+        <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.03912029734!2d90.375862!3d23.74703065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C+Dhaka+1209%2C+Bangladesh!5e0!3m2!1sen!2s!4v1426129357793" width="100%" height="400px" frameborder="0" style="border:0; background-color: #000;"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; iAqidah 2015 |Designed By: <a href = "https://www.facebook.com/hm.ijhar" > Ijharul Islam Alkawsary </a></p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src= "{% static "/static/js/jquery.js" %}" ></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "/static/js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static "/static/js/jquery.easing.min.js" %}"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+   
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "/static/js/grayscale.js" %}"></script>
+
+</body>
+
+</html>
